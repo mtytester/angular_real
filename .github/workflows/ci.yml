@@ -33,15 +33,15 @@ jobs:
         run:|
           ng build
           
-    - name: Place Holder to run unit tests
-      run: echo "Tests are running"
+ 
+    - run: echo "Tests are running"
           
-    #- name: Create a tar file 
-    #  run: tar -zcvf artifact.tar.gz ./dist
+    - name: Create a tar file 
+      run: tar -zcvf artifact.tar.gz ./dist
     
-    #- name: Upload Artifact
-    #  uses: actions/upload-artifact@v2
-    #  with:
-    #    name: artifact-1.0.0
-    #    path: artifact.tar.gz
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifact-1.0.0
+        path: artifact.tar.gz
     
