@@ -30,7 +30,8 @@ jobs:
     - run: yarn install
     
     - name: Build the project
-      run: ng build
+      run: | 
+        ng build
           
     - run: echo "Tests are running"
           
