@@ -27,11 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     
-    - run: yarn install
+    #- run: yarn install
     
-    - name: npm install and npm run build
-        run:|
-          ng build
+    #- name: npm install and npm run build
+    #    run:|
+    #      ng build
         
     
     
