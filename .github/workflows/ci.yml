@@ -30,10 +30,8 @@ jobs:
     - run: yarn install
     
     - name: npm install and npm run build
-        run:|
-          ng build
+      run: ng build
           
- 
     - run: echo "Tests are running"
           
     - name: Create a tar file 
